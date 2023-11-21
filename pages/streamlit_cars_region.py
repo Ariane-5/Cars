@@ -31,7 +31,7 @@ df_region
 st.title('Quelques statistiques globales de nos données :')
 
 nb = len(df_region)
-f"La région {choix_region} comprend {nb} entrées, ce qui représente environ {round(nb / len(df) *100)} % de l'ensemble de nos données"
+f"La région {choix_region} comprend {nb} entrées, ce qui représente environ {round(nb / len(df) *100)} % de l'ensemble de nos données."
 
 stats = pd.DataFrame(df_region.describe())
 stats = stats.drop(['count'], axis = 0).round().astype('int')
