@@ -22,6 +22,7 @@ with colA :
   df
 
 with colB :
+  'Corrélation entre les variables :'
   sns.heatmap(df.corr(), cmap = 'Spectral_r', center = 0, annot = True).figure
   plt.close()
 
