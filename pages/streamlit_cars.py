@@ -45,6 +45,9 @@ with col1 :
 
   sns.boxplot(x='continent', y = 'cylinders', data = df).figure
   plt.close()
+  
+  sns.scatterplot(x='year', y='mpg', data=df, hue = 'continent').figure
+  plt.close()
 
 with col2 :
   sns.boxplot(x='continent', y = 'cubicinches', data = df).figure
