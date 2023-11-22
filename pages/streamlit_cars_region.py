@@ -47,6 +47,9 @@ with col1 :
 
   sns.boxplot(x='continent', y = 'cylinders', data = df_region).figure
   plt.close()
+  
+  sns.regplot(x='year', y='mpg', data=df_region).figure
+  plt.close()
 
 with col2 :
   sns.boxplot(x='continent', y = 'cubicinches', data = df_region).figure
