@@ -45,7 +45,8 @@ with col1 :
 
   sns.boxplot(x='continent', y = 'cylinders', data = df).figure
   plt.close()
-  
+
+  "Évolution de la consommation des véhicules au fil des années :"
   sns.scatterplot(x='year', y='mpg', data=df, hue = 'continent').figure
   plt.close()
 
