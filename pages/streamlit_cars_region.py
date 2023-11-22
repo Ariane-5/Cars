@@ -47,7 +47,8 @@ with col1 :
 
   sns.boxplot(x='continent', y = 'cylinders', data = df_region).figure
   plt.close()
-  
+
+  "Évolution de la consommation des véhicules au fils des années :"
   sns.regplot(x='year', y='mpg', data=df_region).figure
   plt.close()
 
